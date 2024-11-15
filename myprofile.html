@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Profile Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Background Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3f87a6, #ebf8e1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        /* Profile Card */
+        .profile-container {
+            max-width: 400px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .profile-container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Profile Image */
+        .profile-image {
+            width: 100%;
+            height: 200px;
+            background: url('https://via.placeholder.com/400x200') no-repeat center center/cover;
+        }
+
+        /* Profile Details */
+        .profile-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile-email, .profile-phone, .profile-experience, .profile-skills {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        /* Buttons */
+        .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #3f87a6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #365d73;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+<div class="profile-container">
+    <!-- Profile Image -->
+    <div class="profile-image"></div>
+    
+    <!-- Profile Details -->
+    <div class="profile-details">
+        <div class="profile-name">John Doe</div>
+        <div class="profile-email">johndoe@example.com</div>
+        <div class="profile-phone">123-456-7890</div>
+        <div class="profile-experience">Experience: 5 years</div>
+        <div class="profile-skills">Skills: JavaScript, HTML, CSS</div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button class="btn">Edit Profile</button>
+        <button class="btn">Logout</button>
+    </div>
+</div>
+
+</body>
+</html>
